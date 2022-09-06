@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const MenuContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#DED9D3" : "#010606")};
-
   @media screen and (max-width: 868px) {
     padding: 100px 0;
   }

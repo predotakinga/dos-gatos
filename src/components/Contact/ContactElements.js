@@ -18,7 +18,7 @@ export const ContactWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
-  stify-content: center;
+  justify-content: center;
 `;
 
 export const ContactRow = styled.div`

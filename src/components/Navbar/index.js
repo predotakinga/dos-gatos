@@ -43,7 +43,7 @@ const Navbar = ({ toggle }) => {
                 Home
               </NavLinks>
             </NavItem>
-            <NavItem>
+            {/* <NavItem>
               <NavLinks
                 to="about"
                 smooth={true}
@@ -54,7 +54,7 @@ const Navbar = ({ toggle }) => {
               >
                 O nas
               </NavLinks>
-            </NavItem>
+            </NavItem> */}
             <NavItem>
               <NavLinks
                 to="menu"

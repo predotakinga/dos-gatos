@@ -45,7 +45,7 @@ const Contact = ({
                 </PhoneNumber>
                 <Heading lightText={lightText}>Zapraszamy do lokalu</Heading>
                 <PhoneNumber darkText={darkText}>
-                  <AiFillHome size={24} style={{ marginRight: "5px" }} />
+                  {/* <AiFillHome size={24} style={{ marginRight: "5px" }} /> */}
                   ul. Piwna 15, Gliwice
                 </PhoneNumber>
               </TextWrapper>

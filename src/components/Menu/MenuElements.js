@@ -1,34 +1,34 @@
 import styled from "styled-components";
 
-export const ContactContainer = styled.div`
+export const MenuContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#DED9D3" : "#010606")};
-  padding: 100px 0;
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 868px) {
     padding: 100px 0;
   }
 `;
 
-export const ContactWrapper = styled.div`
+export const MenuWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 5s60px;
+  height: 860px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
-  stify-content: center;
+  justify-content: center;
 `;
 
-export const ContactRow = styled.div`
+export const MenuRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
     imgStart ? `'col2 col1'` : `'col1 col2'`};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 868px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
@@ -76,10 +76,8 @@ export const Heading = styled.h1`
   }
 `;
 
-export const PhoneNumber = styled.p`
+export const Subtitle = styled.p`
   max-width: 440px;
-  display: flex;
-  vertical-align: middle;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
@@ -99,7 +97,12 @@ export const ImgWrap = styled.div`
 
 export const Img = styled.img`
   width: 100%;
+  height: 80%;
   margin: 0 0 10px 0;
   padding-right: 0;
   border-radius: 10px;
+`;
+
+export const PdfLink = styled.a`
+  text-decoration: none;
 `;

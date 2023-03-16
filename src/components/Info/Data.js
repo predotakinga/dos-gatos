@@ -14,4 +14,14 @@ export const HoursObjOne = {
   primary: false,
   darkText: true,
   showButton: false,
+  //open hours per day:
+  monday: "Poniedziałek",
+  freeDays: "Wtorek, środa",
+  tuesday: "Czwartek",
+  friday: "Piątek",
+  saturday: "Sobota",
+  sunday: "Niedziela",
+  siesta: "¡Viva la Siesta!",
+  hoursToTwenty: "12.00-20.00",
+  hoursToTwentyOne: "12.00-21.00",
 };

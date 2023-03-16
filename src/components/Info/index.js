@@ -16,6 +16,9 @@ import {
   BtnWrap,
   PdfLink,
   Btn,
+  Column3,
+  TextWrapperColumn2,
+  TextWrapperColumn1,
 } from "./InfoElements";
 
 import ButtonUnstyled from "@mui/material/Button";
@@ -50,7 +53,16 @@ const Info = ({
   description,
   img,
   alt,
+  monday,
+  freeDays,
+  tuesday,
+  friday,
+  saturday,
+  sunday,
   showButton,
+  hoursToTwenty,
+  siesta,
+  hoursToTwentyOne,
 }) => {
   return (
     <>
@@ -73,10 +85,25 @@ const Info = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap>
-                <Img src={img} alt={alt} />
-              </ImgWrap>
+              <TextWrapperColumn1>
+                <TopLine>{monday}</TopLine>
+                <TopLine>{freeDays}</TopLine>
+                <TopLine>{tuesday}</TopLine>
+                <TopLine>{friday}</TopLine>
+                <TopLine>{saturday}</TopLine>
+                <TopLine>{sunday}</TopLine>
+              </TextWrapperColumn1>
+              {/* <Column3> */}
+              <TextWrapperColumn2>
+                <TopLine>{hoursToTwenty}</TopLine>
+                <TopLine>{siesta}</TopLine>
+                <TopLine>{hoursToTwenty}</TopLine>
+                <TopLine>{hoursToTwentyOne}</TopLine>
+                <TopLine>{hoursToTwentyOne}</TopLine>
+                <TopLine>{hoursToTwenty}</TopLine>
+              </TextWrapperColumn2>
             </Column2>
+            {/* </Column3> */}
           </InfoRow>
         </InfoWrapper>
       </InfoContainer>

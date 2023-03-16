@@ -26,7 +26,7 @@ export const InfoRow = styled.div`
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
   grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1'` : `'col1 col2'`};
+    imgStart ? `'col2  col1'` : `'col1 col2 '`};
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
@@ -50,6 +50,22 @@ export const TextWrapper = styled.div`
   max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
+`;
+
+export const TextWrapperColumn1 = styled.div`
+  max-width: 540px;
+  padding-top: 0;
+  padding-bottom: 60px;
+  width: 50%;
+  float: left;
+`;
+
+export const TextWrapperColumn2 = styled.div`
+  max-width: 540px;
+  padding-top: 0;
+  padding-bottom: 60px;
+  width: 50%;
+  float: right;
 `;
 
 export const TopLine = styled.p`
